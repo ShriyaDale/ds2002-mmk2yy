@@ -1,0 +1,13 @@
+1. cd ~
+2. mkdir development
+3. touch development/README.md
+4. echo "DS2002" > development/README.md
+5. echo "Shriya Dale" >> development/README.md
+6. for i in {101..200..4}; do touch file$i.txt; done 
+7. touch development/bash_history
+8. history > development/bash_history
+9. tar -czvf development.tar.gz development
+10. echo 'export FAVORITE_FLAVOR="chocolate"' >>~/.bashrc
+
+I used Windows WSL to complete this assignment.
+For step 6, I didn't put the files in the development directory because it didn't specify. 
