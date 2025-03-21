@@ -11,6 +11,6 @@ retrieved = requests.get(gif)
 
 s3 = boto3.client("s3", region_name="us-east-1")
 s3.put_object(Body = file, Bucket = bucket, Key = file)
-presigned_url = s3.generate_presigned_url("get_object", Params={"Bucket": bucket, "Key>
+presigned_url = s3.generate_presigned_url("get_object", Params={"Bucket": bucket, "Key": file}, ExpiresIn = expires_in)
 
 print(presigned_url)
